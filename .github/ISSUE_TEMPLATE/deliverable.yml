@@ -1,0 +1,46 @@
+name: Course deliverable / DevOps task
+description: Pipeline, container, infrastructure, security, or documentation work tied to a course week.
+title: "[Task] "
+labels: ["type:chore"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for anything that is graded on workflow rather than application behaviour.
+        Add the matching `area:` label and set the week milestone after opening.
+
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: What the course asks for
+      description: The deliverable in the syllabus or project writeup that this issue satisfies.
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: What exists in the repository, or what runs and passes, once this is finished.
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+
+  - type: textarea
+    id: docs
+    attributes:
+      label: Documentation to update
+      description: README, runbook, architecture notes, or diagram. Documentation ships in the same pull request as the change.
+    validations:
+      required: true
+
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk and rollback
+      description: Only if this touches deployment, secrets, or anything with a cost. How to undo it if it goes wrong.
+    validations:
+      required: false
