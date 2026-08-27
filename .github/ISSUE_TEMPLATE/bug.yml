@@ -1,0 +1,44 @@
+name: Bug report
+description: Something behaves differently from how it should.
+title: "[Bug] "
+labels: ["type:bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened, and what you expected instead
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where did you see this?
+      options:
+        - Local (uvicorn, no containers)
+        - Docker Compose
+        - Staging deployment
+        - Kubernetes (kind)
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or error output
+      description: Paste the relevant lines. This is rendered as a code block, so no backticks needed.
+      render: shell
+    validations:
+      required: false

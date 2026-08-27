@@ -1,0 +1,49 @@
+name: Feature / user story
+description: A capability Lychee should have, described from the user's point of view.
+title: "[Feature] "
+labels: ["type:feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Add the matching `area:` label and the week milestone after opening.
+
+  - type: textarea
+    id: story
+    attributes:
+      label: User story
+      description: Who wants this, what they do, and why it matters to them.
+      value: |
+        As a ,
+        I want to ,
+        so that .
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What has to be true before this can be closed. Be specific enough that a reviewer can check it without asking you.
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+
+  - type: textarea
+    id: tests
+    attributes:
+      label: How this will be tested
+      description: Which test file, and what it asserts. Tests ship in the same pull request as the feature.
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes and scope
+      description: Design decisions, links to the project writeup, and anything deliberately left out.
+    validations:
+      required: false
