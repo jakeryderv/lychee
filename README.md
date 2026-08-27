@@ -7,9 +7,9 @@ Logo: app/static/lychee-logo.svg
 A multi-venue restaurant inventory tracker that lets rotating staff log stock counts in the natural units they already use (a bottle, a case, a head of lettuce), keeps bar, dry, and cold goods as distinct categories, and keeps two venues sharing one physical kitchen in sync in close to real time.
 
 Team Members
-[Name] ([@GitHub handle])
-[Name] ([@GitHub handle])
-[Name] ([@GitHub handle])
+Sumner (@sumnerkirby)
+Mei (@Mei-Morrow)
+Jake (@jakeryderv)
 Who This Is For
 Primary users: Rotating front of house and back of house staff recording counts during or between shifts.
 
