@@ -6,9 +6,9 @@ This is the starter repository for the SDI 4213-980 DevOps - CI/CD semester proj
 
 ## Team Members
 
-- Jake - Head Developer
-- Mei - Backend Developer
-- Sumner - Front End Developer
+- [@Jake](https://github.com/jakeryderv) - Head Developer
+- [@Mei](https://github.com/mei-morrow) - Backend Developer
+- [@Sumner](https://github.com/sumnerkirby) - Front End Developer
 
 
 ## Planned Technology Stack
