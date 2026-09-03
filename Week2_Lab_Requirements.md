@@ -34,14 +34,14 @@ Once PRs are merged, make sure the board reflects reality: Done, In Progress, Re
 4. Commit, push, open PR, get review, merge, delete branch, move issue to Done.
 
 ## Deliverables to Submit
-1. Link to team GitHub repository
-2. Link to GitHub Project board
-3. Link to the merged PR for the team workflow document
-4. Links to each student's individual PR
+1. Link to team GitHub repository: https://github.com/jakeryderv/lychee/tree/main
+2. Link to GitHub Project board : https://github.com/jakeryderv/lychee/projects
+3. Link to the merged PR for the team workflow document: https://github.com/jakeryderv/lychee/pulls?q=is%3Apr+is%3Aclosed
+4. Links to each student's individual PR: https://github.com/jakeryderv/lychee/pulls?q=is%3Apr+is%3Aclosed
 5. Screenshot or link showing at least one code review comment
-6. Link to the PR that added the workflow section to the README
-7. Updated README containing the link to the team workflow document
-8. Short team reflection
+6. Link to the PR that added the workflow section to the README: https://github.com/jakeryderv/lychee/pulls?q=is%3Apr+is%3Aclosed
+7. Updated README containing the link to the team workflow document (done)
+8. Short team reflection: 
 
 ## Grading (100 pts total)
 | Category | Points |
