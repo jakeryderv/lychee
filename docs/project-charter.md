@@ -4,9 +4,9 @@
 
 ## Team Members
 
-- Jake - Role
-- Sumner - Role
-- Mei - Role
+- Jake
+- Sumner
+- Mei
 
 ## Application Purpose
 
