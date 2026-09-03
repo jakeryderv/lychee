@@ -1,15 +1,12 @@
 # Project Charter
 
-## Project Name
-
-Enter your project name here.
+## Lychee
 
 ## Team Members
 
-- Name 1 - Role
-- Name 2 - Role
-- Name 3 - Role
-- Name 4 - Role
+- Jake - Role
+- Sumner - Role
+- Mei - Role
 
 ## Application Purpose
 
