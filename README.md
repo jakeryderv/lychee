@@ -14,6 +14,7 @@ This is the starter repository for the SDI 4213-980 DevOps - CI/CD semester proj
 ## Planned Technology Stack
 
 - Programming language: Python
+- Dependency and environment management: uv
 - Framework: FastAPI
 - Testing framework: Pytest
 - CI/CD platform: GitHub Actions
@@ -41,16 +42,18 @@ Week 1-2: Project setup, documentation, GitHub workflow, and branching practice.
 
 ## Running the Application Locally
 
-Install dependencies:
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then install dependencies from the repository root:
 
 ```bash
-pip install -r requirements.txt
+uv sync --locked
 ```
+
+The project pins Python 3.12 in `.python-version`. uv downloads Python if needed and manages the local `.venv`, including development dependencies. No manual environment activation is required.
 
 Run the application:
 
 ```bash
-uvicorn app.main:app --reload
+uv run uvicorn app.main:app --reload
 ```
 
 Open the app in your browser:
@@ -68,8 +71,20 @@ http://127.0.0.1:8000/docs
 ## Running Tests
 
 ```bash
-pytest
+uv run python -m pytest
 ```
+
+## Managing Dependencies
+
+Use `uv add <package>` for application dependencies and `uv add --dev <package>` for development tools. Commit both `pyproject.toml` and `uv.lock` when dependencies change so teammates use the same resolved versions. Commit `.python-version` as well; keep `.venv` out of Git.
+
+## Running with Docker Compose
+
+```bash
+docker compose up --build
+```
+
+The container uses Python 3.12 and installs application dependencies from `uv.lock`, excluding development dependencies. The API is available at `http://127.0.0.1:8000`.
 
 ## Basic Git Workflow
 
