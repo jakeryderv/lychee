@@ -6,10 +6,14 @@ Describe the application and its major components.
 
 ## How to Run Locally
 
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then run these commands from the repository root. uv manages Python 3.12 and the local virtual environment.
+
 ```bash
-pip install -r requirements.txt
-uvicorn app.main:app --reload
+uv sync --locked
+uv run uvicorn app.main:app --reload
 ```
+
+Run the tests with `uv run python -m pytest`.
 
 ## How to Run with Docker
 
@@ -21,8 +25,10 @@ docker run -p 8000:8000 sdi4213-app
 ## How to Run with Docker Compose
 
 ```bash
-docker compose up
+docker compose up --build
 ```
+
+The image installs the application dependencies from `uv.lock` with `uv sync --locked --no-dev --no-install-project`. Development dependencies are excluded. Rebuild the image after changing dependencies or application code.
 
 ## Health Check
 
